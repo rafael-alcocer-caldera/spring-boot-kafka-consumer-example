@@ -1,0 +1,12 @@
+server:
+  port : 8088
+
+spring:
+   kafka:
+     consumer:
+        bootstrap-servers: localhost:9092
+        group-id: myGroup
+        key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+        value-deserializer: rafael.alcocer.caldera.deserializer.CustomDeserializer
+        serde: rafael.alcocer.caldera.serde.CustomSerde
+        topic-name: rac-topic
