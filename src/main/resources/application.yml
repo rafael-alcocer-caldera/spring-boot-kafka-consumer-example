@@ -9,4 +9,4 @@ spring:
         key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
         value-deserializer: rafael.alcocer.caldera.deserializer.CustomDeserializer
         serde: rafael.alcocer.caldera.serde.CustomSerde
-        topic-name: rac-topic
+        topic-name: rac3-topic
